@@ -41,11 +41,9 @@ Contact your IT team for your organisation's specific proxy settings.
 
 ### Does GitHub Copilot save chat history?
 
-No. GitHub Copilot does not store chat transcripts persistently. It maintains temporary context only for generating responses.
+Copilot uses your prompts and relevant context to generate responses. How GitHub processes and retains Copilot data depends on your plan, settings, and where you use Copilot (for example, an IDE or GitHub.com).
 
-For Business and Enterprise plans, prompts and suggestions are discarded after generating responses and are not used to retrain models.
-
-See the [GitHub Copilot Trust Center](https://copilot.github.trust.page/) for privacy details.
+See the [GitHub Copilot Trust Center](https://copilot.github.trust.page/) for current privacy and retention details.
 
 ### Supported programming languages
 
@@ -84,7 +82,9 @@ GitHub Copilot generates both small snippets and larger blocks including entire 
 
 GitHub Copilot Chat uses your current file, chat history, and workspace context to provide relevant responses. Use `@workspace` to help Copilot retrieve relevant files from your codebase.
 
-Free tier: 50 chat requests per month. Paid plans have higher or unlimited limits.
+Copilot Free includes **50 messages per month** for Copilot Chat in IDEs. Other plans have different entitlements, including premium request allowances.
+
+See [Plans for GitHub Copilot](https://docs.github.com/en/copilot/about-github-copilot/plans-for-github-copilot) for up to date limits.
 
 See the [GitHub Copilot documentation](https://docs.github.com/en/copilot/about-github-copilot/github-copilot-features) for full feature details.
 

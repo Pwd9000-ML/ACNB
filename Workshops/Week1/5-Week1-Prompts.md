@@ -224,7 +224,7 @@ Reorganize the authentication code:
 
 ## 5. Plan Mode - Implementation Planning
 
-> **Note:** Plan mode is in public preview and subject to change. Availability varies by IDE/version—see the [Copilot feature matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix).
+> **Note:** Plan mode is in public preview and subject to change. Availability varies by IDE/version. See the [Copilot feature matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix).
 
 Plan mode helps you think through tasks before executing by creating detailed implementation plans.
 
