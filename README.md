@@ -301,4 +301,4 @@ This project is licensed under the terms specified in the [LICENSE](LICENSE) fil
 
 ---
 
-**Curriculum updated:** January 30, 2026
+**Curriculum updated:** February 04, 2026
