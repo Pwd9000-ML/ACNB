@@ -18,6 +18,12 @@ Quick reference for IDE feature availability. For detailed setup instructions, s
 
 ## Feature Matrix
 
+Copilot features change frequently, and availability depends on your IDE version, Copilot extension version, and your organisation's policy settings. Use GitHub's feature matrix as the source of truth.
+
+Official feature matrix: https://docs.github.com/en/copilot/reference/copilot-feature-matrix
+
+The table below is a simplified guide that assumes you are using current, stable IDE and extension versions.
+
 | Feature | VS Code | Visual Studio | JetBrains | Eclipse | Xcode |
 |---------|---------|---------------|-----------|---------|-------|
 | Inline Suggestions | Full | Full | Full | Full | Full |

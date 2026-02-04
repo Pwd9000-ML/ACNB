@@ -87,7 +87,7 @@ GitHub Copilot offers several interaction modes, each suited to different develo
 
 ### Language Support
 
-GitHub Copilot supports virtually all programming languages, with particularly strong performance in widely-used languages due to the volume of training data available.
+GitHub Copilot supports many programming languages, with particularly strong performance in widely used languages due to the volume of training data available.
 
 **Tier 1, Excellent Support:**
 
