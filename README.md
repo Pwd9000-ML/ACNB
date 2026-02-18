@@ -289,6 +289,14 @@ Before starting Week 4, please complete your Week 3 reflections if you haven't a
 - [Facilitator Guide](FAQ/facilitator-guide.md) - For trainers delivering this curriculum
 - [Participant Quickstart](FAQ/participant-quickstart.md) - Quick reference for participants
 
+### Sample SQL Query
+
+Here's a basic SQL query to retrieve user IDs:
+
+```sql
+SELECT user_id FROM users;
+```
+
 ---
 
 ## Contributing
