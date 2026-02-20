@@ -2,7 +2,7 @@
 
 Please follow the instructions below to complete the hands-on lab for Week 3.
 
-_Learn to use GitHub Copilot CLI—a standalone terminal application—for issue management and building a Node.js calculator application._
+_Learn to use GitHub Copilot CLI, a standalone terminal application, for issue management and building a Node.js calculator application._
 
 ## Welcome
 
