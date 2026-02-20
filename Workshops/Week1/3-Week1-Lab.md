@@ -51,4 +51,4 @@ Upstream source: https://github.com/skills/getting-started-with-github-copilot
 
 ## Next Steps
 
-- **Week 1 Prompt Examples:** After completing this interactive [hands-on lab](4-week1-lab.md), take a look at [Week 1 Prompt Examples](5-Week1-Prompts.md) to see how to craft effective prompts for GitHub Copilot.
+- **Week 1 Prompt Examples:** After completing this interactive [hands-on lab](3-Week1-Lab.md), take a look at [Week 1 Prompt Examples](4-Week1-Prompts.md) to see how to craft effective prompts for GitHub Copilot.

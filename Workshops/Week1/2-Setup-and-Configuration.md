@@ -18,8 +18,9 @@
   - [Eclipse for SAP ABAP Development (ADT)](#eclipse-for-sap-abap-development-adt)
 - [Part 3: Configuration and Customisation](#part-3-configuration-and-customisation)
 - [Part 4: Basic Commands and Workflows](#part-4-basic-commands-and-workflows)
-- [Part 5: Troubleshooting](#part-5-troubleshooting)
-- [Part 6: Best Practices for Setup](#part-6-best-practices-for-setup)
+- [Part 5: GitHub Copilot Interaction Modes](#part-5-github-copilot-interaction-modes)
+- [Part 6: Troubleshooting](#part-6-troubleshooting)
+- [Part 7: Best Practices for Setup](#part-7-best-practices-for-setup)
 
 ---
 
@@ -528,7 +529,87 @@ If your subscription provides multiple model options:
 
 ---
 
-## Part 5: Troubleshooting
+## Part 5: GitHub Copilot Interaction Modes
+
+GitHub Copilot offers four distinct interaction modes designed for different stages of the development lifecycle: **Ask**, **Edit**, **Agent**, and **Plan**. Each mode serves a specific purpose and understanding when to use each one will help you get the most out of GitHub Copilot.
+
+> **Note:** Feature availability varies by IDE and version. For example, GitHub's feature overview notes that **Edit mode is only available in Visual Studio Code and JetBrains IDEs**, but you should use the [Copilot feature matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix) as the source of truth for your specific IDE/version.
+
+### Quick Comparison
+
+| Mode | Best For | Key Capability | Example Use Case |
+|------|----------|----------------|------------------|
+| **Ask** | Learning and Debugging | Conversational Q&A without modifying code | *"What does this function do?"* or *"Explain this error."* |
+| **Edit** | Refactoring and Fixes | Precise, user-controlled changes to specific files | *"Rename this variable to `isUserLoggedIn`"* or *"Refactor this into a new method."* |
+| **Agent** | Autonomous Building | Iterative coding, running terminal commands, and multi-file changes | *"Create a new React component with tests and add it to the router."* |
+| **Plan** | Architecture and Strategy | Generates a step-by-step blueprint before coding | *"How should we structure a new user authentication module?"* |
+
+### Detailed Breakdown
+
+#### Ask Mode (Chat)
+
+> **Function:** Acts as a knowledgeable pair programmer who can see your code but touches nothing. It answers questions, explains concepts, and generates code snippets you must manually copy/insert.
+
+**When to use:**
+- Exploring a new codebase
+- Understanding how existing code works
+- Getting explanations without risking accidental changes
+
+**Example:**
+> *"You are exploring a new codebase and want to understand how the `AuthService` works without risking accidental deletions."*
+
+#### Edit Mode (Inline)
+
+> **Function:** A "do what I say" mode for targeted execution. You highlight code (or select files) and give a specific instruction. Copilot applies the changes directly to the editor for your review in a Diff View.
+
+**When to use:**
+- Making precise, controlled changes
+- Refactoring specific sections of code
+- Adding documentation or comments
+
+**Example:**
+> *"You have a 50-line function and want to refactor it to use `async/await` instead of callbacks, or add comments to a class."*
+
+#### Agent Mode (Autonomous Developer)
+
+> **Function:** The most powerful mode. It functions autonomously to complete a task. It can edit multiple files, run terminal commands (like `npm install` or running tests), and self-correct if it encounters errors.
+
+**When to use:**
+- Scaffolding new projects or features
+- Tasks requiring changes across multiple files
+- Operations that need terminal commands
+
+**Example:**
+> *"Scaffold a new Next.js project with Tailwind CSS." The Agent will create folders, install dependencies, and write the initial pages while you watch.*
+
+#### Plan Mode (Architect)
+
+> **Function:** The "think before you act" mode. Instead of writing code immediately, it analyses your request and codebase to generate a structured implementation plan (often in Markdown). You review and refine this plan before handing it off to Agent Mode to execute.
+
+**When to use:**
+- Planning complex features
+- Understanding the scope of changes needed
+- Ensuring nothing is missed in a large implementation
+
+**Example:**
+> *"You need to implement a complex feature like adding Dark Mode support. Plan Mode lists every file that needs changing (CSS, components, user settings) so you don't miss anything."*
+
+### Custom Agents (Extensions)
+
+GitHub Copilot supports **custom agents** that provide specialised capabilities. Custom agents allow repositories or organisations to define specialised AI assistants tailored to specific rules, documentation, or external services. You define them using Markdown files called **agent profiles**, which can specify prompts, tools, and MCP servers.
+
+> **Tip:** Custom agents are covered in detail in **Week 2, Session 1** ([Prompt Engineering Best Practices](../Week2/1-Prompt-Engineering-Best-Practices.md)), where you will learn how to create and configure your own agents.
+
+### Choosing the Right Mode
+
+- **Need answers?** → Use **Ask Mode**
+- **Need targeted changes?** → Use **Edit Mode**
+- **Need autonomous help?** → Use **Agent Mode**
+- **Need a roadmap?** → Use **Plan Mode**
+
+---
+
+## Part 6: Troubleshooting
 
 > **Tip:** If GitHub Copilot stops working, first check [GitHub's Status page](https://githubstatus.com/) for any active incidents.
 
@@ -569,7 +650,7 @@ If your subscription provides multiple model options:
 
 ---
 
-## Part 6: Best Practices for Setup
+## Part 7: Best Practices for Setup
 
 1. **Start with VS Code** if you're new, it has the most complete Copilot integration
 2. **Keep your IDE updated** to ensure compatibility with latest Copilot features
@@ -581,5 +662,5 @@ If your subscription provides multiple model options:
 
 ## Next Steps
 
-- **Week 1 Session 3:** In the next session ['GitHub Copilot Interaction Modes'](3-GitHub-Copilot-Interaction-Modes.md), we will learn how to use different modes of GitHub Copilot available in VS Code, when and how to use them effectively
+- **Week 1 Session 3:** In the next session, we'll complete an interactive [hands-on lab](3-Week1-Lab.md) to apply GitHub Copilot in real-world scenarios
 

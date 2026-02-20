@@ -8,10 +8,9 @@ A comprehensive 4-week curriculum designed to help developers master GitHub Copi
 - [Curriculum](#curriculum)
   - [Week 1: Introduction and Developer Workflow Essentials](#week-1-introduction-and-developer-workflow-essentials)
     - [1. Understanding GitHub Copilot](#1-understanding-github-copilot-30-minutes)
-    - [2. Setup and Configuration](#2-setup-and-configuration-30-minutes)
-    - [3. GitHub Copilot Interaction Modes](#3-github-copilot-interaction-modes-15-minutes)
-    - [4. Hands-On Lab: Getting Started with GitHub Copilot](#4-hands-on-lab-getting-started-with-github-copilot-45-60-minutes)
-    - [5. Week 1 Prompt Examples](#5-week-1-prompt-examples-reference-guide-self-study)
+    - [2. Setup, Configuration, and Interaction Modes](#2-setup-configuration-and-interaction-modes-45-60-minutes)
+    - [3. Hands-On Lab: Getting Started with GitHub Copilot](#3-hands-on-lab-getting-started-with-github-copilot-45-60-minutes)
+    - [4. Week 1 Prompt Examples](#4-week-1-prompt-examples-reference-guide-self-study)
     - [Week 1 Feedback](#week-1-feedback)
   - [Week 2: Advanced Development and Support Use Cases](#week-2-advanced-development-and-support-use-cases)
     - [1. Prompt Engineering Best Practices](#1-prompt-engineering-best-practices-45-60-minutes)
@@ -63,35 +62,29 @@ This training program is structured as a progressive learning journey, taking pa
 
 **Content:** [1. Understanding GitHub Copilot](Workshops/Week1/1-Understanding-GitHub-Copilot.md)
 
-#### 2. Setup and Configuration (30 minutes)
+#### 2. Setup, Configuration, and Interaction Modes (45-60 minutes)
 
 - Installation and setup in multiple IDEs (VS Code - Demo)
 - Configuring authentication and preferences
 - Basic commands and UI navigation
+- Understanding the four core modes: Ask, Edit, Agent, and Plan
+- When and how to use each mode effectively
+- Custom Agents and Extensions overview
 - Troubleshooting common issues
 - Best practices for setup
 
-**Content:** [2. Setup and Configuration](Workshops/Week1/2-Setup-and-Configuration.md)
+**Content:** [2. Setup, Configuration, and Interaction Modes](Workshops/Week1/2-Setup-and-Configuration.md)
 
-#### 3. GitHub Copilot Interaction Modes (15 minutes)
-
-- Understanding the four core modes: Ask, Edit, Agent, and Plan
-- When and how to use each mode
-- Custom Agents and Extensions
-- Selecting the right mode for different tasks
-
-**Content:** [3. GitHub Copilot Interaction Modes](Workshops/Week1/3-GitHub-Copilot-Interaction-Modes.md)
-
-#### 4. Hands-On Lab: Getting Started with GitHub Copilot (45-60 minutes)
+#### 3. Hands-On Lab: Getting Started with GitHub Copilot (45-60 minutes)
 
 - Learn different ways to interact with Copilot to explain, write, debug, and develop code
 - Practical application by updating Mergington High School's extracurricular activities website
 - Guided exercises covering all interaction modes
 - Real-world problem-solving scenarios
 
-**Content:** [4. Hands-On Lab: Getting Started with GitHub Copilot](Workshops/Week1/4-week1-lab.md)
+**Content:** [3. Hands-On Lab: Getting Started with GitHub Copilot](Workshops/Week1/3-Week1-Lab.md)
 
-#### 5. Week 1 Prompt Examples (Reference Guide Self Study)
+#### 4. Week 1 Prompt Examples (Reference Guide Self Study)
 
 - Inline code completions and function suggestions
 - Ask mode for code explanations and learning
@@ -101,7 +94,7 @@ This training program is structured as a progressive learning journey, taking pa
 - Debugging assistance techniques
 - Documentation generation patterns
 
-**Content:** [5. Week 1 Prompt Examples](Workshops/Week1/5-Week1-Prompts.md)
+**Content:** [4. Week 1 Prompt Examples](Workshops/Week1/4-Week1-Prompts.md)
 
 #### Week 1 Feedback
 
