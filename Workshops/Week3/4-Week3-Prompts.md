@@ -16,6 +16,8 @@
 - [4. Validation and Security Scanning](#4-validation-and-security-scanning)
 - [5. Test Optimisation](#5-test-optimisation)
 
+> **Note:** CLI prompts are integrated into each section below rather than listed separately. All prompts work in VS Code Chat and Copilot CLI — try both to find your preferred workflow.
+
 ---
 
 ## 1. CI/CD Pipeline Generation
@@ -73,7 +75,21 @@ Create a GitLab CI pipeline for a Python application that:
 - Uses Docker images for consistency
 ```
 
-> **Tip:** Be specific about trigger conditions, job dependencies, and artifacts to ensure proper workflow orchestration.
+> **Tip:** Be specific about trigger conditions, job dependencies, and artifacts to ensure proper workflow orchestration. These prompts work in VS Code Chat and Copilot CLI — try both to find your preferred workflow.
+
+---
+
+#### From the CLI
+
+```bash
+# Generate and save a pipeline directly
+copilot --allow-all-tools -p "Create a GitHub Actions workflow for a Node.js 20 app with build, test, lint, coverage, and artifact upload" > .github/workflows/ci.yml
+
+# Generate and create a PR in one flow
+copilot
+> Create a GitHub Actions CI/CD pipeline for this repo with build, test, and deploy stages
+> /delegate
+```
 
 ---
 
@@ -150,6 +166,20 @@ Generate a Helm values file for production deployment with:
 
 ---
 
+#### From the CLI
+
+```bash
+copilot
+> /cwd ./infrastructure
+> /add-dir ./src
+> Create a production Dockerfile, docker-compose.yml for local dev,
+>   K8s deployment with HPA, and Terraform module for Azure App Service.
+>   Ensure all configs reference port 3000 and are consistent.
+> /delegate
+```
+
+---
+
 ## 3. Test Generation
 
 Test generation creates comprehensive test suites with proper coverage and edge case handling.
@@ -219,6 +249,18 @@ Write Jest tests for this async fetchUserData function that:
 
 ---
 
+#### From the CLI
+
+```bash
+# Generate tests for a specific file
+copilot --allow-all-tools -p "Read src/utils/calculator.js and generate comprehensive Jest tests with >90% branch coverage" > tests/calculator.test.js
+
+# Run tests and fix failures in one pass
+copilot --allow-all-tools -p "Run npm test, analyse any failures, fix the code, and run tests again until they pass"
+```
+
+---
+
 ## 4. Validation and Security Scanning
 
 Validation and security scanning creates pre-deployment checks to catch issues early in the pipeline.
@@ -274,6 +316,18 @@ Add secret scanning to my CI pipeline using:
 ```
 
 > **Tip:** Integrate validation early in the pipeline to fail fast and save compute resources.
+
+---
+
+#### From the CLI
+
+```bash
+copilot
+> /add-dir .github/workflows
+> /add-dir k8s
+> Review all infrastructure configs for security issues, missing best practices,
+>   and YAML syntax errors. Report findings as a checklist with severity levels.
+```
 
 ---
 
@@ -346,6 +400,22 @@ Optimise these integration tests that are taking too long:
 
 ---
 
+
+#### From the CLI
+
+```bash
+# Convert all Mocha tests to Jest in one pass
+copilot
+> /add-dir ./tests
+> Convert all Mocha/Chai test files to Jest syntax. Maintain same coverage and structure.
+> /delegate
+
+# Bulk parameterisation
+copilot --allow-all-tools -p "Refactor all Jest test files in tests/ to use test.each for any test group with 3+ similar test cases"
+```
+
+---
+
 ## Week 3 Feedback
 
 Please complete the following reflections after completing Week 3 activities:
@@ -357,6 +427,6 @@ Please complete the following reflections after completing Week 3 activities:
 
 ## Next Steps
 
-After mastering DevOps automation and testing with Copilot in Week 3, we will explore refactoring, quality standards, and ethical AI practices in Week 4.
+After mastering DevOps automation, testing, and GitHub Copilot CLI workflows in Week 3, we will explore refactoring, quality standards, and ethical AI practices in Week 4.
 
 **[← Back to Main README](../../README.md)** | **[Continue to Week 4 →](../Week4/1-Refactoring-Large-Codebases.md)**

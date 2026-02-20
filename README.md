@@ -124,9 +124,12 @@ Before starting Week 2, please complete your Week 1 reflections if you haven't a
 - Introduction to **prompt engineering**: crafting effective comments and instructions to guide Copilot
 - The CRAFT framework for structuring prompts
 - Writing effective prompts for code explanation and generation
-- Generating code aligned with organisational standards (Instruction files and style guides)
+- Generating code aligned with organisational standards using the three pillars of customisation:
+  - **Instruction files** (`.instructions.md`) for project-wide conventions
+  - **Prompt files** (`.prompt.md`) for reusable task templates
+  - **Custom agent files** (`.agent.md`) for specialised personas with scoped tools and handoffs
 - Incorporating pre-emptive security recommendations
-- Practical prompt exercises with examples
+- Practical prompt exercises with examples (including custom agent creation)
 
 **Content:** [1. Prompt Engineering Best Practices](Workshops/Week2/1-Prompt-Engineering-Best-Practices.md)
 
@@ -173,43 +176,48 @@ Before starting Week 2, please complete your Week 1 reflections if you haven't a
 
 **Duration:** 2 to 2.5 hours (1 session)
 
-**Objective:** Equip participants to use Copilot for DevOps automation and testing to streamline software delivery and improve code reliability.
+**Objective:** Equip participants to use Copilot — in the IDE and the CLI — for CI/CD automation and testing, with the Copilot CLI integrated into every topic rather than treated as a standalone tool.
 
 #### Reflection
 Before starting Week 3, please complete your Week 2 reflections if you haven't already: [Submit Weekly Reflection](../../issues/new?template=weekly-reflection.yml)
 
-#### 1. DevOps Automation (30-45 minutes)
+#### 1. CI/CD and DevOps Automation (30-45 minutes)
 
-- CI/CD pipeline generation: automating setup and integration
-- Infrastructure and configuration as code (Docker, Kubernetes, Terraform)
-- Pre-review validation for deployment readiness
+- Copilot CLI quick start: installation, slash commands, and headless mode
+- CI/CD pipeline generation from the IDE and the CLI
+- Infrastructure as Code (Docker, Kubernetes, Terraform) with CLI generation
+- Pre-review validation for deployment readiness (including CLI-powered checks)
+- Effective DevOps prompting patterns and `/delegate` workflow
 
-**Content:** [1. DevOps Automation](Workshops/Week3/1-DevOps-Automation.md)
+**Content:** [1. CI/CD and DevOps Automation](Workshops/Week3/1-DevOps-Automation.md)
 
 #### 2. Testing and Quality Assurance (30-45 minutes)
 
-- Unit test generation for new and existing code
-- Ensuring repeatable test coverage for templated projects
-- Test optimisation and conversion techniques
+- Unit test generation from the IDE and the CLI
+- Ensuring repeatable test coverage with CLI gap analysis
+- Test optimisation, parameterisation, and framework conversion
+- Quality assurance checklists and testing best practices
 
 **Content:** [2. Testing and Quality Assurance](Workshops/Week3/2-Testing-and-Quality-Assurance.md)
 
 #### 3. Hands-On Lab: DevOps and Testing (60-90 minutes)
 
-- Create CI/CD pipelines using Copilot
+- Install and configure GitHub Copilot CLI
+- Create CI/CD pipelines using Copilot (IDE and CLI)
 - Generate Docker and Kubernetes configurations
 - Build comprehensive test suites with coverage
+- Use `/delegate` to submit work as pull requests
 - Practice test framework conversion
 
 **Content:** [3. Hands-On Lab: DevOps and Testing](Workshops/Week3/3-Week3-Lab.md)
 
 #### 4. Week 3 Prompt Examples (Reference Guide Self Study)
 
-- CI/CD pipeline generation for GitHub Actions and GitLab CI
-- Infrastructure as Code (Docker, Kubernetes, Terraform)
-- Test generation with coverage requirements
+- CI/CD pipeline generation for GitHub Actions and GitLab CI (IDE and CLI)
+- Infrastructure as Code (Docker, Kubernetes, Terraform) with CLI generation
+- Test generation with coverage requirements and CLI gap analysis
 - Validation and security scanning prompts
-- Test optimisation and framework conversion
+- Test optimisation and framework conversion with CLI bulk operations
 
 **Content:** [4. Week 3 Prompt Examples](Workshops/Week3/4-Week3-Prompts.md)
 
