@@ -15,8 +15,8 @@ A comprehensive 4-week curriculum designed to help developers master GitHub Copi
     - [4. Week 1 Prompt Examples](#4-week-1-prompt-examples-reference-guide-self-study)
     - [Week 1 Feedback](#week-1-feedback)
   - [Week 2: Advanced Development and Support Use Cases](#week-2-advanced-development-and-support-use-cases)
-    - [1. Prompt Engineering Best Practices](#1-prompt-engineering-best-practices-45-60-minutes)
-    - [2. Advanced Developer Workflow](#2-advanced-developer-workflow-30-45-minutes)
+    - [1. Prompt Engineering and Customisation](#1-prompt-engineering-and-customisation-45-60-minutes)
+    - [2. Customisation in Practice](#2-customisation-in-practice-45-60-minutes)
     - [3. Hands-On Lab: Customise Your Copilot Experience](#3-hands-on-lab-customise-your-copilot-experience-30-45-minutes)
     - [4. Week 2 Prompt Examples](#4-week-2-prompt-examples-reference-guide-self-study)
     - [Week 2 Feedback](#week-2-feedback)
@@ -114,7 +114,7 @@ This training program is structured as a progressive learning journey, taking pa
 #### Reflection
 Before starting Week 2, please complete your Week 1 reflections if you haven't already: [Submit Weekly Reflection](../../issues/new?template=weekly-reflection.yml)
 
-#### 1. Prompt Engineering Best Practices (45-60 minutes)
+#### 1. Prompt Engineering and Customisation (45-60 minutes)
 
 - Introduction to **prompt engineering**: crafting effective comments and instructions to guide Copilot
 - The CRAFT framework for structuring prompts
@@ -126,17 +126,18 @@ Before starting Week 2, please complete your Week 1 reflections if you haven't a
 - Incorporating pre-emptive security recommendations
 - Practical prompt exercises with examples (including custom agent creation)
 
-**Content:** [1. Prompt Engineering Best Practices](Workshops/Week2/1-Prompt-Engineering-Best-Practices.md)
+**Content:** [1. Prompt Engineering and Customisation](Workshops/Week2/1-Prompt-Engineering-and-Customisation.md)
 
-#### 2. Advanced Developer Workflow (30-45 minutes)
+#### 2. Customisation in Practice (45-60 minutes)
 
+- Applying instruction files, prompt files, and custom agents to real developer workflows
 - Documentation generation with Copilot (JSDoc, README, API docs)
 - The Review-Refine-Iterate cycle for improving suggestions
 - Refining Copilot suggestions for scoped, maintainable code
 - Debugging with Copilot assistance
 - Progressive refinement techniques
 
-**Content:** [2. Advanced Developer Workflow](Workshops/Week2/2-Advanced-Developer-Workflow.md)
+**Content:** [2. Customisation in Practice](Workshops/Week2/2-Customisation-in-Practice.md)
 
 #### 3. Hands-On Lab: Customise Your Copilot Experience (30-45 minutes)
 

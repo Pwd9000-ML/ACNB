@@ -534,7 +534,7 @@ GitHub Copilot offers four distinct interaction modes designed for different sta
 
 GitHub Copilot supports **custom agents** that provide specialised capabilities. Custom agents allow repositories or organisations to define specialised AI assistants tailored to specific rules, documentation, or external services. You define them using Markdown files called **agent profiles**, which can specify prompts, tools, and MCP servers.
 
-> **Tip:** Custom agents are covered in detail in **Week 2, Session 1** ([Prompt Engineering Best Practices](../Week2/1-Prompt-Engineering-Best-Practices.md)), where you will learn how to create and configure your own agents.
+> **Tip:** Custom agents are covered in detail in **Week 2, Session 1** ([Prompt Engineering and Customisation](../Week2/1-Prompt-Engineering-and-Customisation.md)), where you will learn how to create and configure your own agents.
 
 ### Choosing the Right Mode
 
