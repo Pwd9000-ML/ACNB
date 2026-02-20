@@ -533,7 +533,7 @@ If your subscription provides multiple model options:
 
 GitHub Copilot offers four distinct interaction modes designed for different stages of the development lifecycle: **Ask**, **Edit**, **Agent**, and **Plan**. Each mode serves a specific purpose and understanding when to use each one will help you get the most out of GitHub Copilot.
 
-> **Note:** Feature availability varies by IDE and version. For example, GitHub's feature overview notes that **Edit mode is only available in Visual Studio Code and JetBrains IDEs**, but you should use the [Copilot feature matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix) as the source of truth for your specific IDE/version.
+> **Note:** Feature availability varies by IDE and version. For example, **Edit mode is currently available in Visual Studio Code, JetBrains IDEs, and Visual Studio**, but not in Eclipse, Xcode, or Neovim/Vim. Always use the [Copilot feature matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix) as the source of truth for your specific IDE/version.
 
 ### Quick Comparison
 
@@ -585,6 +585,8 @@ GitHub Copilot offers four distinct interaction modes designed for different sta
 #### Plan Mode (Architect)
 
 > **Function:** The "think before you act" mode. Instead of writing code immediately, it analyses your request and codebase to generate a structured implementation plan (often in Markdown). You review and refine this plan before handing it off to Agent Mode to execute.
+
+> **Note:** Plan mode is not listed as a separate feature in the official [Copilot feature matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix). It is available as an option within the Copilot Chat panel in VS Code and may be integrated into Agent mode workflows in other environments. Availability and behaviour may change as features evolve.
 
 **When to use:**
 - Planning complex features
