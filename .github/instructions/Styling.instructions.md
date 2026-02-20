@@ -1,6 +1,6 @@
 ---
 description: Curriculum styling instructions for the GitHub Copilot workshops and Issue templates.
-applyTo: "**/*.md,.github/ISSUE_TEMPLATE/*.yaml"
+applyTo: "**/*.md,**/.github/ISSUE_TEMPLATE/*.yaml"
 ---
 
 - Always use the same formatting for headings, lists, and links across all markdown files to maintain a consistent style.
