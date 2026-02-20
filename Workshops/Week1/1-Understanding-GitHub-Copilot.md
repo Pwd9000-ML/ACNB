@@ -320,12 +320,3 @@ Copilot analyses the code under test and generates comprehensive test cases.
 ## Next Steps
 
 - **Week 1 Session 2:** In the next session ['GitHub Copilot Setup and Configuration Guide'](2-Setup-and-Configuration.md), we will install and configure the GitHub Copilot extensions in your IDE, explore the basic features, and prepare for the more advanced topics covered in subsequent sessions.
-
----
-
-## Additional Resources
-
-- [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
-- [GitHub Copilot Features Overview](https://docs.github.com/en/copilot/about-github-copilot/github-copilot-features)
-- [IDE Support Guide](../../FAQ/IDE-support.md)
-- [GitHub Copilot Trust Centre](https://copilot.github.trust.page/)
