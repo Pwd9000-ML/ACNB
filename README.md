@@ -124,9 +124,12 @@ Before starting Week 2, please complete your Week 1 reflections if you haven't a
 - Introduction to **prompt engineering**: crafting effective comments and instructions to guide Copilot
 - The CRAFT framework for structuring prompts
 - Writing effective prompts for code explanation and generation
-- Generating code aligned with organisational standards (Instruction files and style guides)
+- Generating code aligned with organisational standards using the three pillars of customisation:
+  - **Instruction files** (`.instructions.md`) for project-wide conventions
+  - **Prompt files** (`.prompt.md`) for reusable task templates
+  - **Custom agent files** (`.agent.md`) for specialised personas with scoped tools and handoffs
 - Incorporating pre-emptive security recommendations
-- Practical prompt exercises with examples
+- Practical prompt exercises with examples (including custom agent creation)
 
 **Content:** [1. Prompt Engineering Best Practices](Workshops/Week2/1-Prompt-Engineering-Best-Practices.md)
 
@@ -173,22 +176,25 @@ Before starting Week 2, please complete your Week 1 reflections if you haven't a
 
 **Duration:** 2 to 2.5 hours (1 session)
 
-**Objective:** Equip participants to use Copilot for DevOps automation and testing to streamline software delivery and improve code reliability.
+**Objective:** Equip participants to use Copilot for DevOps automation and testing — including the **GitHub Copilot CLI** for terminal-based workflows — to streamline software delivery and improve code reliability.
 
 #### Reflection
 Before starting Week 3, please complete your Week 2 reflections if you haven't already: [Submit Weekly Reflection](../../issues/new?template=weekly-reflection.yml)
 
 #### 1. DevOps Automation (30-45 minutes)
 
-- CI/CD pipeline generation: automating setup and integration
+- GitHub Copilot CLI: installation, slash commands, and headless mode
+- CI/CD pipeline generation: automating setup and integration (IDE and CLI)
 - Infrastructure and configuration as code (Docker, Kubernetes, Terraform)
 - Pre-review validation for deployment readiness
+- Using `/delegate` to create PRs and custom agents for DevOps review
 
 **Content:** [1. DevOps Automation](Workshops/Week3/1-DevOps-Automation.md)
 
 #### 2. Testing and Quality Assurance (30-45 minutes)
 
 - Unit test generation for new and existing code
+- CLI-based test generation, execution, and debugging
 - Ensuring repeatable test coverage for templated projects
 - Test optimisation and conversion techniques
 
@@ -196,9 +202,11 @@ Before starting Week 3, please complete your Week 2 reflections if you haven't a
 
 #### 3. Hands-On Lab: DevOps and Testing (60-90 minutes)
 
-- Create CI/CD pipelines using Copilot
+- Install and configure GitHub Copilot CLI
+- Create CI/CD pipelines using Copilot (IDE and CLI)
 - Generate Docker and Kubernetes configurations
 - Build comprehensive test suites with coverage
+- Use `/delegate` to submit work as pull requests
 - Practice test framework conversion
 
 **Content:** [3. Hands-On Lab: DevOps and Testing](Workshops/Week3/3-Week3-Lab.md)
@@ -210,6 +218,7 @@ Before starting Week 3, please complete your Week 2 reflections if you haven't a
 - Test generation with coverage requirements
 - Validation and security scanning prompts
 - Test optimisation and framework conversion
+- GitHub Copilot CLI prompts: headless mode, `/delegate`, custom agents
 
 **Content:** [4. Week 3 Prompt Examples](Workshops/Week3/4-Week3-Prompts.md)
 
