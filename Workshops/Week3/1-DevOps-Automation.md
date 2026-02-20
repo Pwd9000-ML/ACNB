@@ -2,16 +2,16 @@
 
 **Duration:** 30-45 minutes  
 **Format:** Presentation with interactive demonstrations  
-**Objective:** Learn to leverage GitHub Copilot — in the IDE and the CLI — for automating CI/CD pipelines, generating Infrastructure as Code, and validating deployments.
+**Objective:** Learn to leverage GitHub Copilot, in the IDE and the CLI, for automating CI/CD pipelines, generating Infrastructure as Code, and validating deployments.
 
 ---
 
 ## Session Overview
 
-DevOps automation is one of Copilot's strongest use cases. The repetitive nature of pipeline configurations, infrastructure definitions, and validation scripts makes them ideal for AI-assisted generation. In this session you will use both the **VS Code Chat** experience and the standalone **Copilot CLI** side by side — learning when each tool fits best.
+DevOps automation is one of Copilot's strongest use cases. The repetitive nature of pipeline configurations, infrastructure definitions, and validation scripts makes them ideal for AI-assisted generation. In this session you will use both the **VS Code Chat** experience and the standalone **Copilot CLI** side by side, learning when each tool fits best.
 
 **What you'll learn:**
-- Generate CI/CD pipelines for various platforms — from the IDE and the CLI
+- Generate CI/CD pipelines for various platforms, from the IDE and the CLI
 - Create Infrastructure as Code (IaC) configurations (Docker, Kubernetes, Terraform)
 - Build pre-deployment validation scripts
 - Use headless mode to embed Copilot in scripts and pipelines
@@ -21,7 +21,7 @@ DevOps automation is one of Copilot's strongest use cases. The repetitive nature
 
 ## Copilot CLI Quick Start
 
-The standalone Copilot CLI brings agentic AI to your terminal — where DevOps work already happens. Instead of covering the CLI in isolation, we use it throughout every topic below alongside the VS Code Chat experience.
+The standalone Copilot CLI brings agentic AI to your terminal, where DevOps work already happens. Instead of covering the CLI in isolation, we use it throughout every topic below alongside the VS Code Chat experience.
 
 > **Note:** The standalone GitHub Copilot CLI replaces the retired `gh copilot` extension. It is a separate application, not a GitHub CLI extension. See [GitHub Copilot CLI documentation](https://docs.github.com/en/copilot/github-copilot-in-the-cli) for details.
 
@@ -197,7 +197,7 @@ Add a step to notify the team on Slack when the build succeeds or fails.
 
 #### Terminal (Copilot CLI)
 
-Generate pipelines directly from the terminal — no IDE required:
+Generate pipelines directly from the terminal, no IDE required:
 
 **Interactive mode:**
 ```bash
@@ -216,7 +216,7 @@ copilot
 > /delegate
 ```
 
-The `/delegate` command is particularly powerful for DevOps — it creates a pull request with all the generated files, adds a description, and submits it for review.
+The `/delegate` command is particularly powerful for DevOps. It creates a pull request with all the generated files, adds a description, and submits it for review.
 
 #### Azure DevOps
 
@@ -836,7 +836,7 @@ copilot
 > /delegate
 ```
 
-This creates a PR with all generated files, a descriptive title, and a summary body — ready for team review.
+This creates a PR with all generated files, a descriptive title, and a summary body, ready for team review.
 
 ### The Monorepo Context Pattern
 
