@@ -46,3 +46,9 @@ If the exercise isn't ready in 20 seconds, please check the [Actions](../../acti
 
 Attribution: This lab is based on the GitHub Skills template **Customize your GitHub Copilot experience**.
 Upstream source: https://github.com/skills/customize-your-github-copilot-experience
+
+---
+
+## Next Steps
+
+- **Week 2 Prompt Examples:** After completing this interactive [hands-on lab](3-Week2-Lab.md), take a look at [Week 2 Prompt Examples](4-Week2-Prompts.md) to see how to craft effective prompts for GitHub Copilot.
