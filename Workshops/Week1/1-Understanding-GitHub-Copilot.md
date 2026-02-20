@@ -139,8 +139,8 @@ GitHub Copilot integrates with a wide range of IDEs and platforms:
 | **Visual Studio Code** | Full | Most complete feature set, first to receive new features |
 | **Visual Studio** | Full | Deep integration for .NET and C++ development |
 | **JetBrains IDEs** | Full | IntelliJ IDEA, PyCharm, WebStorm, Rider, and others |
-| **Eclipse** | Good | Chat, Agent mode, MCP, inline suggestions, and more (feature availability varies by version. See feature matrix) |
-| **Xcode** | Good | Chat, Agent mode, MCP, inline suggestions, and more (feature availability varies by version. See feature matrix) |
+| **Eclipse** | Good | Supports Copilot integration for editing and chat. Specific feature availability varies by version. See Copilot feature matrix. |
+| **Xcode** | Good | Supports Copilot integration for code suggestions. Specific feature availability varies by version. See Copilot feature matrix. |
 | **Neovim/Vim** | Basic | Inline code completions only (Chat, Agent mode, and Edit mode are not supported) |
 | **GitHub.com** | Chat | Browser-based Copilot Chat for repositories |
 | **GitHub Mobile** | Chat | Ask questions about repositories on mobile |
