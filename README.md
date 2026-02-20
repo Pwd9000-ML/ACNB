@@ -176,27 +176,27 @@ Before starting Week 2, please complete your Week 1 reflections if you haven't a
 
 **Duration:** 2 to 2.5 hours (1 session)
 
-**Objective:** Equip participants to use Copilot for DevOps automation and testing — including the **GitHub Copilot CLI** for terminal-based workflows — to streamline software delivery and improve code reliability.
+**Objective:** Equip participants to use Copilot — in the IDE and the CLI — for CI/CD automation and testing, with the Copilot CLI integrated into every topic rather than treated as a standalone tool.
 
 #### Reflection
 Before starting Week 3, please complete your Week 2 reflections if you haven't already: [Submit Weekly Reflection](../../issues/new?template=weekly-reflection.yml)
 
-#### 1. DevOps Automation (30-45 minutes)
+#### 1. CI/CD and DevOps Automation (30-45 minutes)
 
-- GitHub Copilot CLI: installation, slash commands, and headless mode
-- CI/CD pipeline generation: automating setup and integration (IDE and CLI)
-- Infrastructure and configuration as code (Docker, Kubernetes, Terraform)
-- Pre-review validation for deployment readiness
-- Using `/delegate` to create PRs and custom agents for DevOps review
+- Copilot CLI quick start: installation, slash commands, and headless mode
+- CI/CD pipeline generation from the IDE and the CLI
+- Infrastructure as Code (Docker, Kubernetes, Terraform) with CLI generation
+- Pre-review validation for deployment readiness (including CLI-powered checks)
+- Effective DevOps prompting patterns and `/delegate` workflow
 
-**Content:** [1. DevOps Automation](Workshops/Week3/1-DevOps-Automation.md)
+**Content:** [1. CI/CD and DevOps Automation](Workshops/Week3/1-DevOps-Automation.md)
 
 #### 2. Testing and Quality Assurance (30-45 minutes)
 
-- Unit test generation for new and existing code
-- CLI-based test generation, execution, and debugging
-- Ensuring repeatable test coverage for templated projects
-- Test optimisation and conversion techniques
+- Unit test generation from the IDE and the CLI
+- Ensuring repeatable test coverage with CLI gap analysis
+- Test optimisation, parameterisation, and framework conversion
+- Quality assurance checklists and testing best practices
 
 **Content:** [2. Testing and Quality Assurance](Workshops/Week3/2-Testing-and-Quality-Assurance.md)
 
@@ -213,12 +213,11 @@ Before starting Week 3, please complete your Week 2 reflections if you haven't a
 
 #### 4. Week 3 Prompt Examples (Reference Guide Self Study)
 
-- CI/CD pipeline generation for GitHub Actions and GitLab CI
-- Infrastructure as Code (Docker, Kubernetes, Terraform)
-- Test generation with coverage requirements
+- CI/CD pipeline generation for GitHub Actions and GitLab CI (IDE and CLI)
+- Infrastructure as Code (Docker, Kubernetes, Terraform) with CLI generation
+- Test generation with coverage requirements and CLI gap analysis
 - Validation and security scanning prompts
-- Test optimisation and framework conversion
-- GitHub Copilot CLI prompts: headless mode, `/delegate`, custom agents
+- Test optimisation and framework conversion with CLI bulk operations
 
 **Content:** [4. Week 3 Prompt Examples](Workshops/Week3/4-Week3-Prompts.md)
 

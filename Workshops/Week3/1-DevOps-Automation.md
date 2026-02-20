@@ -1,20 +1,57 @@
-# DevOps Automation with GitHub Copilot
+# CI/CD and DevOps Automation with GitHub Copilot
 
 **Duration:** 30-45 minutes  
 **Format:** Presentation with interactive demonstrations  
-**Objective:** Learn to leverage GitHub Copilot for automating CI/CD pipelines, generating Infrastructure as Code, and ensuring deployment readiness.
+**Objective:** Learn to leverage GitHub Copilot — in the IDE and the CLI — for automating CI/CD pipelines, generating Infrastructure as Code, and validating deployments.
 
 ---
 
 ## Session Overview
 
-DevOps automation is one of Copilot's strongest use cases. The repetitive nature of pipeline configurations, infrastructure definitions, and validation scripts makes them ideal for AI-assisted generation.
+DevOps automation is one of Copilot's strongest use cases. The repetitive nature of pipeline configurations, infrastructure definitions, and validation scripts makes them ideal for AI-assisted generation. In this session you will use both the **VS Code Chat** experience and the standalone **Copilot CLI** side by side — learning when each tool fits best.
 
 **What you'll learn:**
-- Generate CI/CD pipelines for various platforms
-- Create Infrastructure as Code (IaC) configurations
+- Generate CI/CD pipelines for various platforms — from the IDE and the CLI
+- Create Infrastructure as Code (IaC) configurations (Docker, Kubernetes, Terraform)
 - Build pre-deployment validation scripts
-- Apply DevOps best practices through effective prompting
+- Use headless mode to embed Copilot in scripts and pipelines
+- Delegate generated work to pull requests with `/delegate`
+
+---
+
+## Copilot CLI Quick Start
+
+The standalone Copilot CLI brings agentic AI to your terminal — where DevOps work already happens. Instead of covering the CLI in isolation, we use it throughout every topic below alongside the VS Code Chat experience.
+
+> **Note:** The standalone GitHub Copilot CLI replaces the retired `gh copilot` extension. It is a separate application, not a GitHub CLI extension. See [GitHub Copilot CLI documentation](https://docs.github.com/en/copilot/github-copilot-in-the-cli) for details.
+
+**Prerequisites:** Node.js 22+ and an active GitHub Copilot subscription (Pro, Pro+, Business, or Enterprise).
+
+```bash
+# Install globally via npm
+npm install -g @githubnext/github-copilot-cli
+
+# Verify installation
+copilot --version
+
+# Authenticate with GitHub
+copilot /login
+```
+
+**Key Slash Commands**
+
+| Command | Purpose |
+|---------|---------|
+| `/delegate` | Create a PR with generated changes |
+| `/agent` | Use custom agents (e.g. DevOps reviewer) |
+| `/mcp` | Manage MCP servers (GitHub repos, issues, PRs) |
+| `/share` | Export session as Markdown |
+| `/cwd` | Change working directory |
+| `/add-dir` | Add directory to context |
+| `/model` | Switch AI model |
+| `/terminal-setup` | Configure terminal integration |
+
+> **Headless mode:** Run `copilot --allow-all-tools -p "your prompt"` to use Copilot non-interactively in shell scripts, Makefiles, pre-commit hooks, and CI pipeline steps.
 
 ---
 
@@ -157,6 +194,29 @@ Add a step to notify the team on Slack when the build succeeds or fails.
 ---
 
 ### Platform-Specific Pipeline Prompts
+
+#### Terminal (Copilot CLI)
+
+Generate pipelines directly from the terminal — no IDE required:
+
+**Interactive mode:**
+```bash
+copilot
+> Create a GitHub Actions workflow for a Node.js 20 app that builds, tests with coverage, lints, and deploys to Azure App Service on main branch. Include caching and matrix strategy for Node 18 and 20.
+```
+
+**Headless mode (scriptable):**
+```bash
+# Generate and save directly
+copilot --allow-all-tools -p "Create a GitHub Actions workflow for a Node.js app with build, test, linting, and deployment to staging on main" > .github/workflows/ci.yml
+
+# Generate and create a PR in one flow
+copilot
+> Create a GitHub Actions CI/CD pipeline for this repo with build, test, and deploy stages
+> /delegate
+```
+
+The `/delegate` command is particularly powerful for DevOps — it creates a pull request with all the generated files, adds a description, and submits it for review.
 
 #### Azure DevOps
 
@@ -516,6 +576,40 @@ output "instance_public_ip" {
 
 ---
 
+### Generating IaC from the CLI
+
+The CLI excels at IaC because you can work directly in the directory where configs live:
+
+```bash
+# Navigate to your infrastructure directory
+copilot
+> /cwd ./infrastructure
+
+# Generate Docker, K8s, and Terraform in context
+> Create a production Dockerfile for the Node.js app in the parent directory. Use multi-stage build, non-root user, and health checks.
+
+# Add multiple directories for cross-referencing
+> /add-dir ./k8s
+> /add-dir ./terraform
+> Review all infrastructure configs and ensure consistency between Docker, Kubernetes, and Terraform resource definitions.
+```
+
+**Headless IaC generation:**
+```bash
+# Generate a Dockerfile
+copilot --allow-all-tools -p "Create a production multi-stage Dockerfile for a Node.js Express app on port 3000 with security best practices" > Dockerfile
+
+# Generate Kubernetes manifests
+copilot --allow-all-tools -p "Create K8s deployment, service, and HPA for a Node.js app with 3 replicas, health checks, and resource limits" > k8s/deployment.yml
+
+# Generate and submit as a PR
+copilot
+> Generate Terraform configuration for an AWS VPC with public/private subnets, ALB, and ECS Fargate cluster
+> /delegate
+```
+
+---
+
 ## 3. Pre-Review Validation for Deployment
 
 ### Why Validation Matters
@@ -659,6 +753,42 @@ jobs:
 
 ---
 
+### Validating from the CLI
+
+Validate configurations from the terminal before committing:
+
+```bash
+# Interactive validation review
+copilot
+> /add-dir .github/workflows
+> /add-dir k8s
+> /add-dir .
+> Validate all YAML files in these directories. Check for syntax errors, security issues, and missing best practices. Report findings as a checklist.
+
+# Headless validation in a pre-commit hook or CI step
+copilot --allow-all-tools -p "Check all Dockerfiles in this repo for security issues: hardcoded secrets, running as root, using latest tags, missing health checks"
+```
+
+**Using CLI in a CI Pipeline (GitHub Actions):**
+```yaml
+jobs:
+  ai-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install Copilot CLI
+        run: npm install -g @githubnext/github-copilot-cli
+      
+      - name: AI-Powered Config Review
+        run: |
+          copilot --allow-all-tools -p "Review the Kubernetes manifests in k8s/ for security best practices and report any issues"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+---
+
 ## Effective DevOps Prompting Patterns
 
 ### The Specification Pattern
@@ -692,6 +822,34 @@ Generate [resource] with security best practices:
 - Network policies applied
 ```
 
+### The Delegate Pattern
+
+Use `/delegate` to go from idea to pull request in one session:
+
+```bash
+copilot
+> Create a complete CI/CD pipeline for this Node.js project:
+> 1. GitHub Actions workflow with build, test, security scan, and deploy stages
+> 2. Production Dockerfile with multi-stage build
+> 3. Kubernetes deployment with health checks and HPA
+> Review all the files you've created and ensure they are consistent.
+> /delegate
+```
+
+This creates a PR with all generated files, a descriptive title, and a summary body — ready for team review.
+
+### The Monorepo Context Pattern
+
+Use `/add-dir` and `/cwd` to work across services in a monorepo:
+
+```bash
+copilot
+> /add-dir ./services/api
+> /add-dir ./services/web
+> /add-dir ./infrastructure
+> Create a GitHub Actions workflow that builds and tests both the api and web services in parallel, then deploys them together
+```
+
 ---
 
 ## Key Takeaways
@@ -702,6 +860,10 @@ Generate [resource] with security best practices:
 4. **Validate early** - Add validation steps to catch issues before deployment
 5. **Use platform conventions** - Let Copilot leverage its knowledge of CI/CD best practices
 6. **Review generated code** - Always verify configurations before applying them
+7. **Use CLI for terminal workflows** - Copilot CLI brings AI directly to where DevOps work happens
+8. **Automate with headless mode** - Embed `copilot --allow-all-tools -p` in scripts and CI steps
+9. **Delegate to PRs** - Use `/delegate` to go from generation to pull request in one flow
+10. **Leverage custom agents** - Create `.github/agents/` for repeatable compliance and review workflows
 
 ---
 
