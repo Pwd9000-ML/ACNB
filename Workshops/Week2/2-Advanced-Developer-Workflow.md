@@ -1,6 +1,6 @@
 # Advanced Developer Workflow
 
-**Duration:** 30-45 minutes  
+**Duration:** 45-60 minutes  
 **Format:** Presentation with demonstrations  
 **Objective:** Learn to leverage GitHub Copilot for documentation generation and refining suggestions for maintainable, production-ready code.
 
