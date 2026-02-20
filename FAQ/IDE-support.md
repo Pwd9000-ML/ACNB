@@ -49,3 +49,9 @@ Feature availability may vary by subscription plan and IDE version. See the [off
 
 VS Code typically receives new Copilot features first, followed by Visual Studio and JetBrains IDEs.
 
+---
+
+## Language-Specific Guides
+
+- [Language Support](language-support.md) - Language-specific limitations, best practices, and integration guidance (includes [ABAP](language-support.md#abap))
+

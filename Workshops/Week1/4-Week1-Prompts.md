@@ -224,7 +224,7 @@ Reorganize the authentication code:
 
 ## 5. Plan Mode - Implementation Planning
 
-> **Note:** Plan mode is in public preview and subject to change. Availability varies by IDE/version. See the [Copilot feature matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix).
+> **Note:** Plan mode is not listed as a separate feature in the official [Copilot feature matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix). It is available as an option within the Copilot Chat panel in VS Code and may be integrated into Agent mode workflows in other environments. Availability and behaviour may change as features evolve.
 
 Plan mode helps you think through tasks before executing by creating detailed implementation plans.
 
