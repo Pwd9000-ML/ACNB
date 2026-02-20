@@ -1,6 +1,6 @@
 # GitHub Copilot Setup and Configuration Guide
 
-**Duration:** 30 minutes
+**Duration:** 45-60 minutes
 **Format:** LIVE Demo/Recording  
 **Objective:** Get GitHub Copilot installed, configured, and ready to use in your preferred development environment.
 
