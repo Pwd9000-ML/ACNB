@@ -21,8 +21,8 @@ A comprehensive 4-week curriculum designed to help developers master GitHub Copi
     - [4. Week 2 Prompt Examples](#4-week-2-prompt-examples-reference-guide-self-study)
     - [Week 2 Feedback](#week-2-feedback)
   - [Week 3: DevOps and Testing with Copilot](#week-3-devops-and-testing-with-copilot)
-    - [1. DevOps Automation](#1-devops-automation-30-45-minutes)
-    - [2. Testing and Quality Assurance](#2-testing-and-quality-assurance-30-45-minutes)
+    - [1. GitHub Copilot CLI for DevOps Automation](#1-github-copilot-cli-for-devops-automation-45-60-minutes)
+    - [2. Testing and Quality Assurance with Copilot CLI](#2-testing-and-quality-assurance-with-copilot-cli-45-60-minutes)
     - [3. Hands-On Lab: DevOps and Testing](#3-hands-on-lab-devops-and-testing-60-90-minutes)
     - [4. Week 3 Prompt Examples](#4-week-3-prompt-examples-reference-guide-self-study)
     - [Week 3 Feedback](#week-3-feedback)
@@ -177,24 +177,28 @@ Before starting Week 2, please complete your Week 1 reflections if you haven't a
 #### Reflection
 Before starting Week 3, please complete your Week 2 reflections if you haven't already: [Submit Weekly Reflection](../../issues/new?template=weekly-reflection.yml)
 
-#### 1. CI/CD and DevOps Automation (30-45 minutes)
+#### 1. GitHub Copilot CLI for DevOps Automation (45-60 minutes)
 
-- Copilot CLI quick start: installation, slash commands, and headless mode
+- Copilot CLI quick start: installation (WinGet, Homebrew, npm), slash commands, and headless mode
+- Interactive vs programmatic modes and session management
 - CI/CD pipeline generation from the IDE and the CLI
 - Infrastructure as Code (Docker, Kubernetes, Terraform) with CLI generation
+- Incident response and log analysis from the terminal
+- Built-in agents (Explore, Task, Plan, Code-review) and context management
 - Pre-review validation for deployment readiness (including CLI-powered checks)
-- Effective DevOps prompting patterns and `/delegate` workflow
+- Effective DevOps prompting patterns, security permissions, and `/delegate` workflow
 
-**Content:** [1. CI/CD and DevOps Automation](Workshops/Week3/1-DevOps-Automation.md)
+**Content:** [1. GitHub Copilot CLI for DevOps Automation](Workshops/Week3/1-DevOps-Automation.md)
 
-#### 2. Testing and Quality Assurance (30-45 minutes)
+#### 2. Testing and Quality Assurance with Copilot CLI (45-60 minutes)
 
 - Unit test generation from the IDE and the CLI
 - Ensuring repeatable test coverage with CLI gap analysis
-- Test optimisation, parameterisation, and framework conversion
+- Test optimisation and parameterisation
+- Framework conversion (with full examples in Week 3 Prompts)
 - Quality assurance checklists and testing best practices
 
-**Content:** [2. Testing and Quality Assurance](Workshops/Week3/2-Testing-and-Quality-Assurance.md)
+**Content:** [2. Testing and Quality Assurance with Copilot CLI](Workshops/Week3/2-Testing-and-Quality-Assurance.md)
 
 #### 3. Hands-On Lab: DevOps and Testing (60-90 minutes)
 
