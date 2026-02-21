@@ -294,8 +294,8 @@ ERRORS=0
 echo "Validating YAML files in: $DIRECTORY"
 echo "=================================="
 
-# Find all YAML files
-for file in $(find "$DIRECTORY" -name "*.yaml" -o -name "*.yml"); do
+# Find all YAML files, handling file names with spaces or special characters
+find "$DIRECTORY" \( -name "*.yaml" -o -name "*.yml" \) -print0 | while IFS= read -r -d '' file; do
     echo -n "Checking $file... "
     
     if python3 -c "import yaml; yaml.safe_load(open('$file'))" 2>/dev/null; then
