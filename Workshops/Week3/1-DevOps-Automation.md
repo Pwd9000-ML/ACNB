@@ -443,8 +443,8 @@ The CLI is particularly powerful for incident response, where speed matters and 
 ### Analysing Logs from the Terminal
 
 ```bash
-# Pipe logs directly into Copilot for analysis
-copilot --allow-all-tools -p "Analyse these Kubernetes pod logs and identify the root cause of the crash loop" < /tmp/pod-logs.txt
+# Pipe logs directly into Copilot for analysis, using least privilege as no tools are required for this task
+copilot -p "Analyse these Kubernetes pod logs and identify the root cause of the crash loop" < /tmp/pod-logs.txt
 
 # Interactive incident investigation
 copilot
