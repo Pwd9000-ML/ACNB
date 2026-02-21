@@ -298,11 +298,12 @@ echo "=================================="
 find "$DIRECTORY" \( -name "*.yaml" -o -name "*.yml" \) -print0 | while IFS= read -r -d '' file; do
     echo -n "Checking $file... "
     
-    if python3 -c "import yaml; yaml.safe_load(open('$file'))" 2>/dev/null; then
+    # Use a fixed Python command and pass the filename as an argument to avoid code injection through file names
+    if python3 -c 'import sys, yaml; yaml.safe_load(open(sys.argv[1]))' "$file" 2>/dev/null; then
         echo "✓ Valid"
     else
         echo "✗ Invalid"
-        python3 -c "import yaml; yaml.safe_load(open('$file'))" 2>&1 || true
+        python3 -c 'import sys, yaml; yaml.safe_load(open(sys.argv[1]))' "$file" 2>&1 || true
         ERRORS=$((ERRORS + 1))
     fi
 done
