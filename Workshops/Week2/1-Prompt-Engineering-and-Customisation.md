@@ -1,8 +1,8 @@
-# Prompt Engineering Best Practices
+# Prompt Engineering and Customisation
 
 **Duration:** 45-60 minutes  
 **Format:** Presentation with interactive examples  
-**Objective:** Master the art of crafting effective prompts to guide GitHub Copilot for consistent, high-quality code generation.
+**Objective:** Master the art of crafting effective prompts and learn the three pillars of Copilot customisation (instruction files, prompt files, and custom agents) for consistent, high-quality code generation.
 
 ---
 
@@ -669,6 +669,6 @@ Practice creating custom agents for your team:
 
 ## Next Steps
 
-- Proceed to [Advanced Developer Workflow](2-Advanced-Developer-Workflow.md) to learn about documentation generation and refining Copilot suggestions
+- Proceed to [Customisation in Practice](2-Customisation-in-Practice.md) to see how instruction files, prompt files, and custom agents improve documentation, refinement, and debugging workflows
 - Complete the [Week 2 Lab](3-Week2-Lab.md) to practice customising your Copilot experience
 - Review [Week 2 Prompts](4-Week2-Prompts.md) for additional prompt examples

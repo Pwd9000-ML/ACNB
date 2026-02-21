@@ -1,17 +1,17 @@
-# Testing and Quality Assurance with GitHub Copilot
+# Testing and Quality Assurance with Copilot CLI
 
-**Duration:** 30-45 minutes  
+**Duration:** 45-60 minutes  
 **Format:** Presentation with hands-on examples  
-**Objective:** Master test generation, coverage improvement, and test optimisation techniques using GitHub Copilot — in the IDE and the CLI.
+**Objective:** Master test generation, coverage improvement, and test optimisation techniques using the GitHub Copilot CLI and VS Code Chat.
 
 ---
 
 ## Session Overview
 
-Testing is a critical part of software development where Copilot excels. From generating unit tests by analysing source code to converting tests between frameworks, Copilot can significantly accelerate your testing workflow. In this session you will use both VS Code Chat and the standalone Copilot CLI — because tests are written in the editor but *run* in the terminal.
+Testing is a critical part of software development where Copilot excels. From generating unit tests by analysing source code to converting tests between frameworks, Copilot can significantly accelerate your testing workflow. In this session you will use both VS Code Chat and the standalone Copilot CLI, because tests are written in the editor but *run* in the terminal.
 
 **What you'll learn:**
-- Generate comprehensive unit tests — from the IDE and the CLI
+- Generate comprehensive unit tests, from the IDE and the CLI
 - Ensure consistent test coverage across projects
 - Optimise tests with parameterisation and data-driven approaches
 - Convert tests between different frameworks
@@ -348,7 +348,7 @@ copilot
 > /delegate
 ```
 
-> **Tip:** Copilot CLI can execute commands directly in your terminal, so it can run your test suite, read the output, and iterate on fixes — all in one conversation.
+> **Tip:** Copilot CLI can execute commands directly in your terminal, so it can run your test suite, read the output, and iterate on fixes, all in one conversation.
 
 ---
 
@@ -673,92 +673,16 @@ describe('Login', () => {
 
 ---
 
-#### JUnit to pytest
-
-**Prompt:**
-```text
-Convert these JUnit tests to pytest with appropriate fixtures and assertions:
-
-@Test
-public void testAddition() {
-    Calculator calc = new Calculator();
-    assertEquals(5, calc.add(2, 3));
-}
-
-@Test
-public void testDivisionByZero() {
-    Calculator calc = new Calculator();
-    assertThrows(ArithmeticException.class, () -> calc.divide(10, 0));
-}
-```
-
-**pytest Output:**
-```python
-import pytest
-from calculator import Calculator
-
-@pytest.fixture
-def calculator():
-    """Fixture to create a Calculator instance."""
-    return Calculator()
-
-class TestCalculator:
-    def test_addition(self, calculator):
-        assert calculator.add(2, 3) == 5
-
-    def test_division_by_zero(self, calculator):
-        with pytest.raises(ZeroDivisionError):
-            calculator.divide(10, 0)
-
-    @pytest.mark.parametrize("a,b,expected", [
-        (2, 3, 5),
-        (0, 0, 0),
-        (-1, 1, 0),
-    ])
-    def test_addition_parametrized(self, calculator, a, b, expected):
-        assert calculator.add(a, b) == expected
-```
-
-Note: Java exception types do not map 1:1 to Python. For division by zero, Python raises `ZeroDivisionError`.
-
----
-
-#### Mocha to Jest
-
-**Prompt:**
-```text
-Convert this Mocha/Chai test suite to Jest:
-
-const { expect } = require('chai');
-
-describe('Array', function() {
-    describe('#indexOf()', function() {
-        it('should return -1 when value is not present', function() {
-            expect([1, 2, 3].indexOf(4)).to.equal(-1);
-        });
-    });
-});
-```
-
-**Jest Output:**
-```javascript
-describe('Array', () => {
-    describe('#indexOf()', () => {
-        test('should return -1 when value is not present', () => {
-            expect([1, 2, 3].indexOf(4)).toBe(-1);
-        });
-    });
-});
-```
+> **Tip:** For additional framework conversion examples (JUnit to pytest, Mocha to Jest), see the [Week 3 Prompts](4-Week3-Prompts.md#5-test-optimisation) reference guide.
 
 ---
 
 ### From the CLI
 
-Use Copilot CLI for bulk test operations across your project — ideal for large-scale refactoring:
+Use Copilot CLI for bulk test operations across your project, ideal for large-scale refactoring:
 
 ```bash
-# Convert all Mocha tests to Jest in one pass
+# Convert all test files from one framework to another in one pass
 copilot
 > /add-dir ./tests
 > Convert all Mocha/Chai test files in the tests/ directory to Jest syntax. Maintain the same test coverage and structure. Update imports, assertions, and lifecycle hooks.
