@@ -34,12 +34,11 @@ The standalone Copilot CLI brings agentic AI to your terminal, where DevOps work
 # Option 1: Windows (WinGet)
 winget install GitHub.Copilot
 
-# Option 2: macOS (Homebrew)
-brew install gh
-gh extension install github/copilot-cli
+# Option 2: macOS/Linux (Homebrew)
+brew install copilot-cli
 
-# Option 3: npm (cross-platform, requires Node.js 22+)
-npm install -g @githubnext/github-copilot-cli
+# Option 3: npm (macOS, Linux, or Windows, requires Node.js 22+)
+npm install -g @github/copilot
 
 # Verify installation
 copilot --version
@@ -525,7 +524,7 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: Install Copilot CLI
-        run: npm install -g @githubnext/github-copilot-cli
+        run: npm install -g @github/copilot
       
       - name: AI-Powered Config Review
         run: |
