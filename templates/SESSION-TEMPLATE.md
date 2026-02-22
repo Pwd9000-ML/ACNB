@@ -96,7 +96,7 @@ Content here.
 
 ## Next Steps
 
-- **{{NEXT_SESSION_TITLE}}:** In the next session ['{{NEXT_SESSION_TITLE}}']({{NEXT_SESSION_FILE}}), we will {{NEXT_SESSION_PREVIEW}}.
+- **{{NEXT_SESSION_TITLE}}:** In the next session ['{{NEXT_SESSION_TITLE}}']({{NEXT_SESSION_FILE}}), you will build on the concepts from this session and apply them in more advanced scenarios.
 
 ---
 
