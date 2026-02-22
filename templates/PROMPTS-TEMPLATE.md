@@ -123,5 +123,5 @@ Please complete the following reflections after completing Week {{WEEK_NUMBER}} 
 
 ## Next Steps
 
-After mastering these prompting techniques in Week {{WEEK_NUMBER}}, we will explore {{NEXT_WEEK_PREVIEW}} in Week {{NEXT_WEEK_NUMBER}}.
-**[← Back to Main README](../../README.md)** | **[Continue to Week {{NEXT_WEEK_NUMBER}} →]({{NEXT_WEEK_SESSION_FILE}})**
+After mastering these prompting techniques in Week {{WEEK_NUMBER}}, review the main curriculum overview to prepare for upcoming topics.
+**[← Back to Main README to choose your next week](../../README.md)**
