@@ -64,7 +64,7 @@ body:
       label: Best prompt you used (paste it here)
       description: Share a prompt or comment that worked particularly well
       placeholder: |
-        Example: "// {{EXAMPLE_PROMPT_PLACEHOLDER}}"
+        Example: "// Ask Copilot to refactor this function to be more readable"
     validations:
       required: true
 
