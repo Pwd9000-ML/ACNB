@@ -239,6 +239,7 @@ Before starting Week 4, please complete your Week 3 reflections if you haven't a
 #### 1. Refactoring Large Codebases (30-45 minutes)
 
 - Understanding and navigating legacy code
+- Using semantic search to map and explore large codebases
 - Incremental refactoring strategies (extract, rename, modernise)
 - Improving readability, maintainability, and performance
 - Prompting patterns for complex refactoring
