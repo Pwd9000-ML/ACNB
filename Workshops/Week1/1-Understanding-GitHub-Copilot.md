@@ -76,9 +76,10 @@ GitHub Copilot offers several interaction modes, each suited to different develo
 | Mode | Description | Best For |
 |------|-------------|----------|
 | **Inline Suggestions** | Real-time code completions as you type | Writing new code, boilerplate, repetitive patterns |
-| **Copilot Chat** | Conversational interface for questions and explanations | Learning, debugging, exploring options |
+| **Ask Mode** | Conversational interface for questions and explanations | Learning, debugging, exploring options |
 | **Edit Mode** | Apply changes across multiple files from a single prompt | Refactoring, bulk modifications |
 | **Agent Mode** | Autonomous code generation with terminal access | Complex tasks, scaffolding, multi-step operations |
+| **Plan Mode** | Creates a step-by-step implementation plan before generating code | Complex implementations, architecture planning |
 | **Next Edit Suggestions** | Predicts where you will edit next and suggests completions | Iterative editing, code reviews |
 
 ---

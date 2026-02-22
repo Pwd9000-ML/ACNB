@@ -27,7 +27,7 @@ In this exercise, you will:
 
 GitHub Copilot CLI is a standalone terminal application with exciting features:
 - **Latest AI models**: Access the newest models from OpenAI and Google
-- **Custom agents**: Create specialized agent personas for your workflows using `.github/agents/`
+- **Custom agents**: Create specialised agent personas for your workflows using `.github/agents/`
 - **`/delegate` command**: Delegate tasks to Copilot coding agent which works autonomously
 - **`/share` command**: Save chat sessions as Markdown files or GitHub gists
 - **Better image support**: Add images via paste and drag-and-drop
@@ -46,7 +46,7 @@ Simply copy the exercise to your account, then give your favourite Octocat (Mona
 
 When copying the exercise, we recommend the following settings:
 
-- For owner, choose your personal account or an organization to host the repository.
+- For owner, choose your personal account or an organisation to host the repository.
 
 - We recommend creating a public repository, since private repositories will use Actions minutes.
 
@@ -67,5 +67,5 @@ Upstream source: https://github.com/skills/create-applications-with-the-copilot-
 
 ## Next Steps
 
-- **Week 3 Prompt Examples:** After completing this interactive [hands-on lab](3-Week3-Lab.md), take a look at [Week 3 Prompt Examples](4-Week3-Prompts.md) to see how to craft effective prompts for GitHub Copilot CLI and DevOps workflows.
+- **Week 3 Prompt Examples:** After completing this hands-on lab, take a look at [Week 3 Prompt Examples](4-Week3-Prompts.md) to see how to craft effective prompts for GitHub Copilot CLI and DevOps workflows.
 

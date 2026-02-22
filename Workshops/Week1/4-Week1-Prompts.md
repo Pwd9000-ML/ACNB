@@ -209,10 +209,10 @@ Add form validation across the login form:
 - Error message constants in constants file
 ```
 
-#### Code Organization
+#### Code Organisation
 
 ```text
-Reorganize the authentication code:
+Reorganise the authentication code:
 - Move auth functions to auth/index.ts
 - Create types in auth/types.ts
 - Update all imports across the project

@@ -68,11 +68,3 @@ ABAP development requires connection to an SAP backend system. GitHub Copilot:
 3. **Verify all suggestions:** Always review generated ABAP code against SAP documentation and your system's data dictionary
 4. **Combine with SAP tools:** Use Copilot alongside SAP's built-in code templates, patterns, and ABAP documentation
 5. **Leverage for non-ABAP files:** Copilot works well for related files like JSON, XML, JavaScript (UI5/Fiori), and documentation
-
----
-
-## Next Steps
-
-- For IDE setup, see the [Setup and Configuration Guide](../Workshops/Week1/2-Setup-and-Configuration.md)
-- For IDE feature comparisons, see the [IDE Support Guide](IDE-support.md)
-- Return to the [main curriculum](../README.md)

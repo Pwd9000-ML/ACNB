@@ -1,4 +1,4 @@
-# GitHub Copilot Setup and Configuration Guide
+# GitHub Copilot: Setup, Configuration, and Interaction Modes
 
 **Duration:** 45-60 minutes (live demo) + self-study reference  
 **Format:** LIVE Demo/Recording  
@@ -39,7 +39,7 @@
 ### Step 1: Verify Your Subscription
 
 1. Visit [https://github.com/](https://github.com/)  
-   **Note:** If you're part of an enterprise organization, your GitHub URL may differ. Check with your GitHub representative or Champion for details.
+   **Note:** If you're part of an enterprise organisation, your GitHub URL may differ. Check with your GitHub representative or Champion for details.
 2. Check your subscription status under **Settings → Billing and Plans**
 3. Ensure your plan includes GitHub Copilot access
 
@@ -421,7 +421,7 @@ If your subscription provides multiple model options:
 **VS Code:**
 1. Open **Copilot Chat** (for example: open the chat view from the Copilot icon, or use **Quick chat** `Ctrl+Shift+Alt+L`)
 2. Use the **model picker** in the chat input field (if available for your plan/policy)
-3. Select from available models (varies by subscription — see [Supported AI models](https://docs.github.com/en/copilot/using-github-copilot/ai-models/supported-ai-models-in-copilot))
+3. Select from available models (varies by subscription, see [Supported AI models](https://docs.github.com/en/copilot/using-github-copilot/ai-models/supported-ai-models-in-copilot))
 
 > **Note:** Different models have different premium request multipliers, which can affect your monthly usage allowance. Copilot Business users may need their organisation to enable model switching.
 
@@ -459,7 +459,7 @@ If your subscription provides multiple model options:
 1. **Highlight the problematic code**
 2. **Open Copilot Chat** and paste the error message
 3. **Type:** `"Why am I getting this error?"`
-4. Copilot analyzes your code and error to provide solutions
+4. Copilot analyses your code and error to provide solutions
 
 ---
 

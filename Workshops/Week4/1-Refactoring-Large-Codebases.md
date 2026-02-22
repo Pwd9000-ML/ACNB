@@ -119,7 +119,7 @@ function calc(a, b, c) {
     let x = a * b;
     let y = x + c;
     let z = y * 0.2;
-    return y - z;
+    return y + z;
 }
 ```
 

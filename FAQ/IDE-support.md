@@ -54,4 +54,3 @@ VS Code typically receives new Copilot features first, followed by Visual Studio
 ## Language-Specific Guides
 
 - [Language Support](language-support.md) - Language-specific limitations, best practices, and integration guidance (includes [ABAP](language-support.md#abap))
-

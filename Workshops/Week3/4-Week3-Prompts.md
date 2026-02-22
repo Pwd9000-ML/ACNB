@@ -16,7 +16,7 @@
 - [4. Validation and Security Scanning](#4-validation-and-security-scanning)
 - [5. Test Optimisation](#5-test-optimisation)
 
-> **Note:** CLI prompts are integrated into each section below rather than listed separately. All prompts work in VS Code Chat and Copilot CLI — try both to find your preferred workflow.
+> **Note:** CLI prompts are integrated into each section below rather than listed separately. All prompts work in VS Code Chat and Copilot CLI. Try both to find your preferred workflow.
 
 ---
 
@@ -75,7 +75,7 @@ Create a GitLab CI pipeline for a Python application that:
 - Uses Docker images for consistency
 ```
 
-> **Tip:** Be specific about trigger conditions, job dependencies, and artifacts to ensure proper workflow orchestration. These prompts work in VS Code Chat and Copilot CLI — try both to find your preferred workflow.
+> **Tip:** Be specific about trigger conditions, job dependencies, and artifacts to ensure proper workflow orchestration. These prompts work in VS Code Chat and Copilot CLI. Try both to find your preferred workflow.
 
 ---
 
@@ -146,7 +146,7 @@ Generate Kubernetes manifests for a Node.js microservice including:
 Create a Terraform configuration for AWS that provisions:
 - VPC with public and private subnets across 2 availability zones
 - Application Load Balancer
-- ECS cluster with Fargate for containerized applications
+- ECS cluster with Fargate for containerised applications
 - RDS PostgreSQL database in private subnet
 - Security groups with least-privilege access
 ```
@@ -286,16 +286,14 @@ Write a shell script to validate all YAML files in a directory and report any sy
 # YAML Validation Script
 # Validates all YAML files in the specified directory
 
-set -e
-
 DIRECTORY="${1:-.}"
 ERRORS=0
 
 echo "Validating YAML files in: $DIRECTORY"
 echo "=================================="
 
-# Find all YAML files, handling file names with spaces or special characters
-find "$DIRECTORY" \( -name "*.yaml" -o -name "*.yml" \) -print0 | while IFS= read -r -d '' file; do
+# Use process substitution to avoid subshell so ERRORS persists
+while IFS= read -r -d '' file; do
     echo -n "Checking $file... "
     
     # Use a fixed Python command and pass the filename as an argument to avoid code injection through file names
@@ -306,7 +304,7 @@ find "$DIRECTORY" \( -name "*.yaml" -o -name "*.yml" \) -print0 | while IFS= rea
         python3 -c 'import sys, yaml; yaml.safe_load(open(sys.argv[1]))' "$file" 2>&1 || true
         ERRORS=$((ERRORS + 1))
     fi
-done
+done < <(find "$DIRECTORY" \( -name "*.yaml" -o -name "*.yml" \) -print0)
 
 echo "=================================="
 echo "Validation complete. Errors found: $ERRORS"
@@ -566,7 +564,7 @@ Refactor these Jest tests to reduce duplication:
 [paste test code]
 - Extract common setup into beforeEach
 - Create helper functions for repeated assertions
-- Use describe blocks to organize tests
+- Use describe blocks to organise tests
 - Improve test names for clarity
 ```
 

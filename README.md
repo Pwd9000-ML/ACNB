@@ -1,6 +1,6 @@
 # GitHub Copilot Training Program
 
-**Last Updated:** 21/02/2026
+**Last Updated:** 22/02/2026
 
 A comprehensive 4-week curriculum designed to help developers master GitHub Copilot, from foundational concepts to advanced techniques including prompt engineering, DevOps automation, and ethical AI practices.
 
@@ -9,7 +9,7 @@ A comprehensive 4-week curriculum designed to help developers master GitHub Copi
 - [About This Training](#about-this-training)
 - [Curriculum](#curriculum)
   - [Week 1: Introduction and Developer Workflow Essentials](#week-1-introduction-and-developer-workflow-essentials)
-    - [1. Understanding GitHub Copilot](#1-understanding-github-copilot-30-minutes)
+    - [1. Understanding GitHub Copilot](#1-understanding-github-copilot-45-60-minutes)
     - [2. Setup, Configuration, and Interaction Modes](#2-setup-configuration-and-interaction-modes-45-60-minutes)
     - [3. Hands-On Lab: Getting Started with GitHub Copilot](#3-hands-on-lab-getting-started-with-github-copilot-45-60-minutes)
     - [4. Week 1 Prompt Examples](#4-week-1-prompt-examples-reference-guide-self-study)
@@ -23,14 +23,14 @@ A comprehensive 4-week curriculum designed to help developers master GitHub Copi
   - [Week 3: DevOps and Testing with Copilot](#week-3-devops-and-testing-with-copilot)
     - [1. GitHub Copilot CLI for DevOps Automation](#1-github-copilot-cli-for-devops-automation-45-60-minutes)
     - [2. Testing and Quality Assurance with Copilot CLI](#2-testing-and-quality-assurance-with-copilot-cli-45-60-minutes)
-    - [3. Hands-On Lab: DevOps and Testing](#3-hands-on-lab-devops-and-testing-60-90-minutes)
+    - [3. Hands-On Lab: Create Applications with the Copilot CLI](#3-hands-on-lab-create-applications-with-the-copilot-cli-60-90-minutes)
     - [4. Week 3 Prompt Examples](#4-week-3-prompt-examples-reference-guide-self-study)
     - [Week 3 Feedback](#week-3-feedback)
   - [Week 4: Refactoring, Optimisation, and Ethical Practices](#week-4-refactoring-optimisation-and-ethical-practices)
     - [1. Refactoring Large Codebases](#1-refactoring-large-codebases-30-45-minutes)
     - [2. Quality Refinements and Standards](#2-quality-refinements-and-standards-30-45-minutes)
     - [3. Ethical and Security Considerations](#3-ethical-and-security-considerations-30-45-minutes)
-    - [4. Hands-On Lab: Collaborative Refactoring](#4-hands-on-lab-collaborative-refactoring-45-60-minutes)
+    - [4. Hands-On Lab: Collaborative Refactoring](#4-hands-on-lab-collaborative-refactoring-90-120-minutes)
     - [5. Week 4 Prompt Examples](#5-week-4-prompt-examples-reference-guide-self-study)
     - [Week 4 Feedback](#week-4-feedback)
 - [Additional Resources](#additional-resources)
@@ -49,13 +49,13 @@ This training program is structured as a progressive learning journey, taking pa
 
 ### Week 1: Introduction and Developer Workflow Essentials
 
-**Duration:** 2-2.5 hours
+**Duration:** 2-3 hours
 
 **Objective:** Establish a foundational understanding of GitHub Copilot and introduce core workflows for developers.
 
 > **Note:** Copilot features (Ask/Edit/Agent/Plan, shortcuts, and advanced capabilities) vary by IDE and version. Use the [Copilot feature matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix) as the source of truth.
 
-#### 1. Understanding GitHub Copilot (30 minutes)
+#### 1. Understanding GitHub Copilot (45-60 minutes)
 
 - Overview of its purpose, architecture, and AI-driven capabilities
 - Supported languages, frameworks, and environments
@@ -144,7 +144,7 @@ Before starting Week 2, please complete your Week 1 reflections if you haven't a
 - Set up repository-wide custom instructions
 - Create targeted custom instructions for specific file types
 - Build reusable prompt templates for common tasks
-- Configure custom agents for specialized workflows
+- Configure custom agents for specialised workflows
 - Practice customising your Copilot experience
 
 **Content:** [3. Hands-On Lab: Customise Your Copilot Experience](Workshops/Week2/3-Week2-Lab.md)
@@ -200,16 +200,15 @@ Before starting Week 3, please complete your Week 2 reflections if you haven't a
 
 **Content:** [2. Testing and Quality Assurance with Copilot CLI](Workshops/Week3/2-Testing-and-Quality-Assurance.md)
 
-#### 3. Hands-On Lab: DevOps and Testing (60-90 minutes)
+#### 3. Hands-On Lab: Create Applications with the Copilot CLI (60-90 minutes)
 
-- Install and configure GitHub Copilot CLI
-- Create CI/CD pipelines using Copilot (IDE and CLI)
-- Generate Docker and Kubernetes configurations
-- Build comprehensive test suites with coverage
-- Use `/delegate` to submit work as pull requests
-- Practice test framework conversion
+- Install and configure the standalone GitHub Copilot CLI
+- Use Copilot CLI to create GitHub issues from templates
+- Build a Node.js calculator application with iterative CLI guidance
+- Practice collaborative development with Copilot on the command line
+- Explore `/delegate` and `/share` commands
 
-**Content:** [3. Hands-On Lab: DevOps and Testing](Workshops/Week3/3-Week3-Lab.md)
+**Content:** [3. Hands-On Lab: Create Applications with the Copilot CLI](Workshops/Week3/3-Week3-Lab.md)
 
 #### 4. Week 3 Prompt Examples (Reference Guide Self Study)
 
@@ -230,7 +229,7 @@ Before starting Week 3, please complete your Week 2 reflections if you haven't a
 
 ### Week 4: Refactoring, Optimisation, and Ethical Practices
 
-**Duration:** 2 to 2.5 hours (1 session or 3 × 30-45 minutes)
+**Duration:** 3 to 4.5 hours (1 session or 3 × 30-45 minutes)
 
 **Objective:** Focus on enhancing code quality through refactoring, fostering ethical AI use, and reinforcing long-term Copilot adoption.
 
@@ -264,7 +263,7 @@ Before starting Week 4, please complete your Week 3 reflections if you haven't a
 
 **Content:** [3. Ethical and Security Considerations](Workshops/Week4/3-Ethical-and-Security-Considerations.md)
 
-#### 4. Hands-On Lab: Collaborative Refactoring (45-60 minutes)
+#### 4. Hands-On Lab: Collaborative Refactoring (90-120 minutes)
 
 - Legacy code assessment and documentation
 - Incremental refactoring with test coverage
@@ -297,14 +296,6 @@ Before starting Week 4, please complete your Week 3 reflections if you haven't a
 - [Language Support](FAQ/language-support.md) - Language-specific limitations, best practices, and integration guidance
 - [Facilitator Guide](FAQ/facilitator-guide.md) - For trainers delivering this curriculum
 - [Participant Quickstart](FAQ/participant-quickstart.md) - Quick reference for participants
-
-### Sample SQL Query
-
-Here's a basic SQL query to retrieve user IDs:
-
-```sql
-SELECT user_id FROM users;
-```
 
 ---
 
