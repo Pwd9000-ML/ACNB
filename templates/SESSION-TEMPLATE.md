@@ -66,14 +66,14 @@ Content here.
 
 ## Best Practices
 
-<!-- List 4-6 best practices relevant to this session topic. -->
+<!-- List 4-6 best practices relevant to this session topic. Replace the example text in the table below with your own content. -->
 
 | Practice | Why It Matters |
 |----------|---------------|
-| **{{PRACTICE_1}}** | {{REASON_1}} |
-| **{{PRACTICE_2}}** | {{REASON_2}} |
-| **{{PRACTICE_3}}** | {{REASON_3}} |
-| **{{PRACTICE_4}}** | {{REASON_4}} |
+| **Practice 1** | Briefly explain why this practice is important for learners in this session. |
+| **Practice 2** | Describe how this practice helps learners apply the session concepts effectively. |
+| **Practice 3** | Summarise how this practice supports long term understanding and retention. |
+| **Practice 4** | Explain how this practice improves collaboration, quality, or safety in this context. |
 
 ---
 
