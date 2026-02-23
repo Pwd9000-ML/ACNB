@@ -1,6 +1,6 @@
 # GitHub Copilot Training Program
 
-**Last Updated:** 22/02/2026
+**Last Updated:** 23/02/2026
 
 A comprehensive 4-week curriculum designed to help developers master GitHub Copilot, from foundational concepts to advanced techniques including prompt engineering, DevOps automation, and ethical AI practices.
 
